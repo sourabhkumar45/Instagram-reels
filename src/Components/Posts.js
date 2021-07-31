@@ -189,7 +189,7 @@ export default function Posts({ userData = null }) {
                   </Ticker>
                 </div>
 
-                <Likes userData={userData} postData={post} />
+                <Likes userData={userData} postData={post} from="post" />
 
                 <ChatBubbleIcon
                   onClick={() => handleClickOpen(post.pId)}

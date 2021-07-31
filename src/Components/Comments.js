@@ -19,8 +19,8 @@ export default function Comments(props) {
     let arr = [];
     // console.log(props.userData);
     // console.log(props.postData.comments);
-    for (let i = 0; i < props.postData.comments.length; i++) {
-      let cid = props.postData.comments[i];
+    for (let i = 0; i < props?.postData?.comments.length; i++) {
+      let cid = props.postData?.comments[i];
       let data = await database.comments.doc(cid).get();
       // console.log(data.data());
       arr.push(data.data());

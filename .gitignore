@@ -3,6 +3,12 @@
 # dependencies
 /node_modules
 firebase.js
+firebase.json
+.firebaserc
+.firebase/hosting.YnVpbGQ.cache
+.firebase/hosting.eWVz.cache
+.vscode
+
 /.pnp
 .pnp.js
 
