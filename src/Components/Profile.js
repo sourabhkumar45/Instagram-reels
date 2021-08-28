@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Header from "../Components/Header";
 import NavBar from "./NavBar";
 import { database } from "../firebase";
 import { useAuth } from "../Context/AuthContext";
@@ -202,7 +201,11 @@ export default function Profile() {
                           </Card>
                           <div className="extra">
                             <div className="likes">
-                              <Likes2 userData={userData} postData={post} from="profile"/>
+                              <Likes2
+                                userData={userData}
+                                postData={post}
+                                from="profile"
+                              />
                               <Typography
                                 className={classes.typo}
                                 variant="body2"
